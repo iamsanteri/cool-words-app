@@ -1,0 +1,11 @@
+{
+  "name": "cool-words-app",
+  "version": "0.0.1",
+  "description": "This is an initial full-stack application project by Santeri Liukkonen.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santeri Liukkonen",
+  "license": "ISC"
+}
