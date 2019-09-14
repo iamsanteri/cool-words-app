@@ -1,5 +1,9 @@
 
 
+Netlify Tag:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7e265ab4-b4ca-4c22-955d-23453d6e3ac9/deploy-status)](https://app.netlify.com/sites/boring-noether-aed69f/deploys)
+
 Update: 14th of September 2019
 
 Starting with a backend as a service (Firebase). Front-end handled by Vue.js. Interacting with a NoSQL storage via APIs. 
