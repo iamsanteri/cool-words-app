@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>cool-words-app</title>
+    <title>A cool words directory - IamSanteri</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   </head>
@@ -15,5 +15,23 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD2kkG2qjWTycR4q1-9SscG3M83IvGayMk",
+        authDomain: "cool-words-app.firebaseapp.com",
+        databaseURL: "https://cool-words-app.firebaseio.com",
+        projectId: "cool-words-app",
+        storageBucket: "",
+        messagingSenderId: "283184685250",
+        appId: "1:283184685250:web:8f6161925b9b3f41c91b5b"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
