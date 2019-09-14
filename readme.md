@@ -1,3 +1,12 @@
+
+
+Update: 14th of September 2019
+
+Starting with a backend as a service (Firebase). Front-end handled by Vue.js. Interacting with a NoSQL storage via APIs. 
+
+
+----- DEPRECATED ------
+
 This application exposes a list of cool words that have been collected by the author for the past couple of years.
 
 The words just sound cool and are a great base for naming projects or other undertakings.
