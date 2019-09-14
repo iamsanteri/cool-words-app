@@ -36,8 +36,8 @@
     <v-content>
       <v-container>
         <v-flex class="d-flex justify-center">
-          <v-card v-bind:style="{width: responsiveCardWidth}" tile>
-            <v-card-title class="mb-4">Cool Words</v-card-title>
+          <v-card v-bind:style="{width: responsiveCardWidth}" style="padding-bottom: 50px" tile>
+            <v-card-title>Cool Words</v-card-title>
             <v-list-item v-bind:key="item" v-for="item in coolWordsArray">
               <v-list-item-content>
                 <v-list-item-title>{{ item }}</v-list-item-title>
@@ -78,6 +78,23 @@ export default {
         }
         return 0;
       })
+    },
+    // Method for uploading data to Firebase
+    batchUploadData() {
+      var originatingList = "Lockdown Marshall Trident Apex  Vector Fusion Uplink Nocturne Desolate Mandrill Point Resort Vox Enclave Boeing Resolve Synergy Redux Vanquish Sentinel Focal Espionage Eagle Deus Shrine United Spire Raptor Sequence Equinox Nonactual Stellar Unity Hawk Cobra Renegade Odin Noctua Martin Abrams Maven Vulcan Maximum Spark Strix Mithril Trust Performance Tracer Osprey Stratus Lockheed Division Pipelines System Flux Array Vanguard Conversion Lean General Dynamics Fidelity Challenger Legacy Vertex Wraith Stabilize Octane Cluster Quartz Velociraptor Struts Varnish Salvo";
+      var wordArray = originatingList.split(" ");
+      var arrayLength = wordArray.length;
+      for (let i = 0; i < arrayLength; i++) {
+      // This is a consequential POST request with Axios, intended to only be used when a batch upload is needed. 
+        this.axios.post("https://cool-words-app.firebaseio.com/data/words.json", {
+          word: wordArray[i]
+        }).then(function(response) {
+          console.log(response);
+        }).catch(function(error) {
+          console.log(error);
+        });
+      }
+      console.log("Finshed Upload");
     }
   },
   computed: {
@@ -93,18 +110,9 @@ export default {
     }
   },
   created: function() {
+    // Uncomment BatchUpload method from above in order to upload data
+    // this.batchUploadData();
 
-    // This is a sample POST request with Axios, it is not needed though. 
-    /*
-    this.axios.post("https://cool-words-app.firebaseio.com/data/words.json", {
-      word: "Thunderbird"
-    }).then(function(response) {
-      console.log(response);
-    }).catch(function(error) {
-      console.log(error);
-    });
-    */
-   
     this.axios.get("https://cool-words-app.firebaseio.com/data.json")
     .then((response) => {
       var temporaryValueStore = Object.values(response.data.words);
