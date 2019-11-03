@@ -81,7 +81,7 @@ export default {
     },
     // Method for uploading data to Firebase
     batchUploadData() {
-      var originatingList = "Lockdown Marshall Trident Apex  Vector Fusion Uplink Nocturne Desolate Mandrill Point Resort Vox Enclave Boeing Resolve Synergy Redux Vanquish Sentinel Focal Espionage Eagle Deus Shrine United Spire Raptor Sequence Equinox Nonactual Stellar Unity Hawk Cobra Renegade Odin Noctua Martin Abrams Maven Vulcan Maximum Spark Strix Mithril Trust Performance Tracer Osprey Stratus Lockheed Division Pipelines System Flux Array Vanguard Conversion Lean General Dynamics Fidelity Challenger Legacy Vertex Wraith Stabilize Octane Cluster Quartz Velociraptor Struts Varnish Salvo";
+      var originatingList = "Lockdown Marshall Trident Apex  Vector Fusion Uplink Nocturne Desolate Mandrill Point Resort Vox Enclave Boeing Resolve Synergy Redux Vanquish Sentinel Focal Espionage Eagle Deus Shrine United Spire Raptor Sequence Equinox Nonactual Stellar Unity Hawk Cobra Renegade Odin Noctua Martin Abrams Maven Vulcan Maximum Spark Strix Mithril Trust Performance Tracer Osprey Stratus Lockheed Division Pipelines System Flux Array Vanguard Conversion Lean General Dynamics Fidelity Challenger Legacy Vertex Wraith Stabilize Octane Cluster Quartz Velociraptor Struts Varnish Salvo Mistral";
       var wordArray = originatingList.split(" ");
       var arrayLength = wordArray.length;
       for (let i = 0; i < arrayLength; i++) {
