@@ -111,7 +111,7 @@ export default {
   },
   created: function() {
     // Uncomment BatchUpload method from above in order to upload data
-    // this.batchUploadData();
+    this.batchUploadData();
 
     this.axios.get("https://cool-words-app.firebaseio.com/data.json")
     .then((response) => {
